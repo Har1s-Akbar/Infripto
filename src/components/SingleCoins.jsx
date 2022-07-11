@@ -8,9 +8,9 @@ function SingleCoins({id,name, market_cap_rank, market_cap, image,high_24h,low_2
     return (
         <section className='w-full'>
             <Link to={`/${id}`}>   
-            <Card className='w-96 transition-all ease-in-out delay-5000 hover:bg-green-600 ' extra={<img src={image} alt={name} className='h-10' />} title={`${market_cap_rank}-    ${name}`} hoverable>
+            <Card className='lg:w-96 transition-all ease-in-out delay-5000 hover:bg-green-600 ' extra={<img src={image} alt={name} className='h-10' />} title={`${market_cap_rank}-    ${name}`} hoverable>
                 <section className='grid grid-cols-2 grid-rows-3 justify-between items-center text-left'>
-                <div>
+                <div >
                     <h2>Symbol</h2>
                     <p>{symbol}</p>
                 </div>
@@ -38,7 +38,7 @@ function SingleCoins({id,name, market_cap_rank, market_cap, image,high_24h,low_2
                     <h2>Lowest 24h</h2>
                     <p>{millify(low_24h)}</p>
                 </div>
-                <div>
+                <div className='lg:flex lg:flex-col sm:hidden'>
                     <h2>All Time High</h2>
                     <p>{millify(ath)}</p>
                 </div>

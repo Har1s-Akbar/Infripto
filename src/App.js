@@ -7,7 +7,7 @@ import CoinsDetails from './components/CoinsDetails';
 import CoinHistory from './components/CoinHistory';
 function App() {
   return (
-    <section className=' h-full'>
+    <section className=' h-full overflow-hidden'>
     <div>
       <Nav/>
     </div>
@@ -23,9 +23,10 @@ function App() {
     <div className='border-t-2 border-zinc-400'>
       <Typography.Title className='text-xl' level={5} style={{textAlign:'center',}}>
         INFRIPTO <br/>
-        All Rights are Reserved
+        All Rights are Reserved <br/>
+        Site is Created by Haris Akbar
       </Typography.Title>
-      <div className='text-center p-5'>
+      <div className='lg:text-center sm:text-left sm:py-5 lg:p-5'>
       <Link to='/' className='mx-5 transition-all delay-150 hover:text-blue-800 ease-in-out hover:border-b-2 hover:border-black'>Home</Link>
       <Link to='/price' className='mx-5 transition-all delay-150 ease-in-out hover:text-blue-800 hover:border-b-2 hover:border-black'>News</Link>
       <Link to='/coins' className='mx-5 transition-all delay-150 ease-in-out hover:border-b-2 hover:text-blue-800 hover:border-black'>Coins</Link>

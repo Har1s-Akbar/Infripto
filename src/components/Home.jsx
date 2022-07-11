@@ -12,15 +12,15 @@ function Home() {
   if(isFetching) return <h1>Loading....</h1>  
   return (
     <>
-    <Typography.Title level={2} className='lg:p-10 text-center sm:p-5'>
+    <Typography.Title level={2} className='p-10 sm:m-auto text-center sm:p-5'>
       Global Crypto Statistics
     </Typography.Title>
-    <Row justify='left' className='lg:ml-96 lg:py-10 sm:ml-20 sm:py-5'>
+    <Row justify='space-evenly' className='lg:ml-96 lg:py-10 sm:mt-10 sm:ml-20 sm:py-5'>
         <Col span={12} > <Statistic title='Total Cryptocurrencies' value={globalStats.active_cryptocurrencies}/></Col>
         <Col span={12} > <Statistic title='Ended ICOS' value={globalStats.ended_icos} /></Col>
         <Col span={12} > <Statistic title='Ongoing ICOS' value={globalStats.ongoing_icos} /></Col>
         <Col span={12} > <Statistic title='Total Markets' value={globalStats.markets} /></Col>
-        <Col span={12} > <Statistic title='Market Change Percentage in 24 Hours' value={millify(globalStats.market_cap_change_percentage_24h_usd)}/></Col>
+        <Col span={12}> <Statistic title='Market Change Percentage in 24 Hours' value={millify(globalStats.market_cap_change_percentage_24h_usd)}/></Col>
     </Row>
     <div>
       <Coins simplified/>

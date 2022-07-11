@@ -28,16 +28,17 @@ function Exchange() {
       key:`trade_volume_24h_btc`,
       title:'Trade Volume of last 24h',
       dataIndex :'trade_volume_24h_btc',
+      responsive : ['lg']
     }
   ]
   if(isFetching) return <h1>loading..........</h1>
   return (
-    <section className='my-20 m-auto w-11/12 '>
-      <div className=' flex justify-around my-10'>
-        <Typography.Title level={1}>Exchanges</Typography.Title>
+    <section className='my-20 w-11/12 m-auto'>
+      <div className=' flex justify-around items-center my-10'>
+        <Typography.Title level={2}>Exchanges</Typography.Title>
         <Link className='text-xl' to='/exchanges'>See More</Link>
       </div>
-      <Table dataSource={data} pagination={{position:['bottomCenter']}} scroll bordered columns= {columns}/>
+      <Table size='large' dataSource={data} pagination={{position:['bottomCenter']}} scroll bordered columns= {columns}/>
     </section>
   )
 }

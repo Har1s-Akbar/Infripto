@@ -43,7 +43,7 @@ function Coins({simplified}) {
         </div>
       )
       }
-      <Row  className='mt-5'>
+      <Row  className='mt-5 '>
         <Col className='grid sm:grid-cols-1 lg:grid-cols-3 m-auto grid-rows-auto sm:gap-5 lg:gap-12'>{coins.map((items ,)=>{
         return  <SingleCoins search ={searchTerm} key={items.id} {...items} />
       })}</Col>

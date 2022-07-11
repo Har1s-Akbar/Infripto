@@ -30,10 +30,10 @@ function CoinsDetails() {
         </Menu>)
 
   return (
-    <section className='mb-5'>
-        <section className='w-5/6 m-auto lg:my-20'>
+    <section className='my-5'>
+        <section className='w-11/12 m-auto lg:my-20'>
             <Card className='lg:text-xl' title={data.name} hoverable extra={<Image src={data.image.large} width={100} ></Image>}>
-                <section className='grid gap-10 sm:grid-cols-2 grid-rows-auto lg:grid-cols-4'>
+                <section className='grid sm:gap-5 lg:gap-10 grid-rows-auto grid-rows-auto lg:grid-cols-4'>
                 <div>
                     <h1 className='sm:text-sm lg:text-base'>Community Score</h1>
                     <p>{data.community_score}/100</p>
@@ -46,7 +46,7 @@ function CoinsDetails() {
                     <h1 className='sm:text-sm lg:text-base'>Public Interest</h1>
                     <p>{data.public_interest_score}%</p>
                 </div>
-                <div className='flex lg:flex-row sm:flex-col sm:text-sm lg:text-base row-start-2'>
+                <div className='flex lg:flex-row place-items-start sm:flex-col sm:text-sm lg:text-base row-start-2'>
                     <h1>Community Data</h1>
                     <Dropdown.Button
                     className='dropdown-btn' overlay={userMenu}>
