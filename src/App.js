@@ -24,7 +24,7 @@ function App() {
       <Typography.Title className='text-xl' level={5} style={{textAlign:'center',}}>
         INFRIPTO <br/>
         All Rights are Reserved <br/>
-        Site is Created by Haris Akbar
+        Site is Created by Haseeb Akbar
       </Typography.Title>
       <div className='lg:text-center sm:text-left sm:py-5 lg:p-5'>
       <Link to='/' className='mx-5 transition-all delay-150 hover:text-blue-800 ease-in-out hover:border-b-2 hover:border-black'>Home</Link>
